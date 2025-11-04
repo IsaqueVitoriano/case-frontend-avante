@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case FrontEnd - Lista de Produtos</title>
+    
+    <link rel="icon" type="icon/svg" sizes="32x32" href="./assets/images/favicon-32x32.svg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <section class="products-section">
+            <h1 class="section-title">Desserts</h1>
+            <div id="product-list" class="product-grid">
+                </div>
+        </section>
+
+        <aside id="cart" class="cart-section">
+            <h2 class="cart-title">Your Cart (<span id="cart-count">0</span>)</h2>
+            
+            <div id="cart-empty" class="cart-empty">
+                <img src="./assets/images/illustration-empty-cart.svg" alt="Ilustração de um carrinho de sobremesas vazio">
+                <p>Your items will appear here</p>
+            </div>
+
+            <div id="cart-items" class="cart-items-container">
+                </div>
+            
+            <div id="cart-summary" class="cart-summary">
+                <div class="cart-total-line">
+                    <h3>Order Total</h3>
+                    <strong id="cart-total-price">$0.00</strong>
+                </div>
+
+                <div class="carbon-neutral">
+                    <img src="./assets/images/icon-carbon-neutral.svg" alt="Carbon Neutral">
+                    <span>This is a <strong>carbon-neutral</strong> delivery</span>
+                </div>
+
+                <button id="confirm-order-btn" class="btn btn-primary">
+                    Confirm Order
+                </button>
+            </div>
+        </aside>
+    </main>
+
+    <div id="order-modal" class="modal-overlay">
+        <div class="modal-content">
+            <img src="./assets/images/icon-order-confirmed.svg" alt="Order Confirmed" class="modal-icon">
+            <h3 class="modal-title">Order Confirmed</h3>
+            <p class="modal-text">We hope you enjoy your food!</p>
+            
+            <div id="modal-summary" class="modal-summary">
+                </div>
+            
+            <div class="cart-total-line" style="margin-top: 1rem;">
+                <h3>Order Total</h3>
+                <strong id="modal-total-price">$0.00</strong>
+            </div>
+
+            <button id="new-order-btn" class="btn btn-primary btn-full">
+                Start New Order
+            </button>
+        </div>
+    </div>
+    
+    <script src="app.js" type="module"></script>
+</body>
+</html>

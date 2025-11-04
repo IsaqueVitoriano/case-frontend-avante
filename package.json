@@ -1,0 +1,16 @@
+{
+  "name": "avanteee",
+  "version": "1.0.0",
+  "description": "Desafio de lista de produtos e carrinho",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "set NODE_OPTIONS=--experimental-vm-modules&& jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
